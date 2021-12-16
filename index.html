@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title id="title">wjsskf</title>
+  </head>
+  <body>
+    <h1 id="header">wjsskf</h1>
+    <p>
+      This "project" is a
+      <a
+        href="https://www.google.com/search?q=dump+tab&oq=dump+tab&aqs=chrome..69i57j0i512l9.1525j0j7&sourceid=chrome&ie=UTF-8"
+        >dump tab</a
+      >
+      for things I'm thinking about or making.
+    </p>
+    <p>
+      I say "project" only because it exists across two platforms: here and
+      <a href="https://www.instagram.com/wjsskf/">its instagram page</a> and it
+      is ongoing.
+    </p>
+    <p>
+      The contents are primarily image- and interaction-based but I try to
+      include documentation when possible/logical.
+    </p>
+    <p>
+      If you'd like to get in touch, you can find my contact information at
+      <a href="http://www.jinsoo.co">www.jinsoo.co</a>.
+    </p>
+
+    <ul>
+      <li>
+        <a href="http://gnjmonroe.github.io/wjsskf/2021년12월15일-1/"
+          >2021년12월15일-1</a
+        >
+      </li>
+      <li>
+        <a href="http://gnjmonroe.github.io/wjsskf/2021년12월16일-1/"
+          >2021년12월16일-1</a
+        >
+      </li>
+    </ul>
+  </body>
+
+  <script>
+    function headerTitleCycle() {
+      const header = document.getElementById("header");
+      const title = document.getElementById("title");
+
+      if (header.textContent == "wjsskf") {
+        header.textContent = "전날";
+        title.textContent = "전날";
+      } else if (header.textContent == "전날") {
+        header.textContent = "journal";
+        title.textContent = "journal";
+      } else {
+        header.textContent = "wjsskf";
+        title.textContent = "wjsskf";
+      }
+      // header.textContent == "wjsskf" ? "전날" : "전날" ? "journal" : "wjsskf";
+
+      setTimeout(headerTitleCycle, 1500);
+    }
+
+    headerTitleCycle();
+  </script>
+</html>
