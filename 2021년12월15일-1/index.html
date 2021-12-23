@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>wjsskf -- 2021년12월15일-1</title>
+  </head>
+  <body>
+    <h1 id="h1">wjsskf</h1>
+    <button id="button">push</button>
+  </body>
+  <script>
+    const h1 = document.getElementById("h1");
+    const button = document.getElementById("button");
+    const body = document.getElementsByTagName("body");
+
+    function colorToggle() {
+      if (body[0].bgColor == "" || body[0].bgColor == "#eeeeee") {
+        body[0].bgColor = "#222222";
+        h1.style.color = "#eeeeee";
+      } else if (body[0].bgColor == "#222222") {
+        body[0].bgColor = "#eeeeee";
+        h1.style.color = "#222222";
+      }
+    }
+
+    function textChange() {
+      if (h1.textContent == "wjsskf") {
+        h1.textContent = "전날";
+      } else if (h1.textContent == "전날") {
+        h1.textContent = "journal";
+      } else if (h1.textContent == "journal") {
+        h1.textContent = "wjsskf";
+      }
+    }
+
+    function buttonPush() {
+      textChange();
+      colorToggle();
+    }
+
+    button.addEventListener("click", buttonPush);
+  </script>
+</html>
