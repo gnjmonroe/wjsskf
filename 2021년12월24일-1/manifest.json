@@ -1,0 +1,11 @@
+{
+  "short_name": "wjsskf",
+  "name": "wjsskf -- 2021년12월24일-1",
+  "icons": [
+  
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
