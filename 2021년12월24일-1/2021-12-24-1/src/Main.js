@@ -85,6 +85,9 @@ const Main = () => {
 
   return (
     <main>
+      <p>This is a reiteration of the previous day's design sketch.</p>
+      <p>Overall, it feels visually better, but I stripped the information hierarchy out to focus on the typography, the primary weakness identified.</p>
+      <p>Obviously the navigation and organizational design is important to me, but I want to focus on building a good visual base over the next few days.</p>
       <Block info={info.info_1} />
       <Block info={info.info_1_1} />
       <Block info={info.info_1_2} />
