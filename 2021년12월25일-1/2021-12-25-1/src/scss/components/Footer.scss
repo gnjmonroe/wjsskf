@@ -1,0 +1,13 @@
+footer {
+  nav {
+    background-color: #212121;
+    a {
+      color: #f5f5f5;
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+  }
+  border-top: 1px solid #212121;
+  width: 100%;
+}

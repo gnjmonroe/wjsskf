@@ -1,0 +1,14 @@
+.sectionDivider {
+  border-bottom: 1px solid #212121;
+}
+section {
+  @media only screen and (max-width: $M) {
+    padding: 16px 20px 36px;
+  }
+  @media only screen and (min-width: #{$M+1}) and (max-width: $XL) {
+    padding: 16px 20px 60px;
+  }
+  @media only screen and (min-width: #{$XL+1}) {
+    padding: 16px 20px 60px;
+  }
+}

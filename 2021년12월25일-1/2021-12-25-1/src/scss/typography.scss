@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+
+* {
+  @include notoSansKR;
+}
+
+h1 {
+  font-size: 1.777rem;
+  padding: 9px 0 11px;
+}
+h2 {
+  @media only screen and (max-width: $M) {
+    font-size: 1rem;
+  }
+  @media only screen and (min-width: #{$M+1}) {
+    font-size: 1.063rem;
+  }
+  margin-bottom: 16px;
+}
+section > p {
+  @media only screen and (max-width: $M) {
+    font-size: 1rem;
+  }
+  @media only screen and (min-width: #{$M+1}) and (max-width: $XL) {
+    font-size: 1.063rem;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: #{$XL+1}) {
+    font-size: 1.063rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+a {
+  display: inline-block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+header,
+footer,
+nav,
+section > h2 {
+  text-align: center;
+}
+footer > p {
+  margin: 12px 20px;
+  font-size: 1rem;
+}
