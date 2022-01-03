@@ -1,0 +1,9 @@
+{
+  "name": "Steve",
+  "age": "36",
+  "education": {
+    "undergrad": "engineering",
+    "masters": "business",
+    "doctorate": "never"
+  }
+}
